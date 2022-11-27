@@ -28,6 +28,43 @@ const ItemContainer = styled.div`
 const Icon = styled.span`
   ${tw`
       text-red-500
+      fill-current
+      text-xs
+      md:text-base
+      mr-1
+      md:mr-3
+  `};
+`;
+
+const SmallIcon = styled.span`
+  ${tw`
+      text-gray-500
+      fill-current
+      text-xs
+      md:text-base
+      ml-1
+  `};
+`;
+
+const Name = styled.span`
+  ${tw`
+      text-gray-600
+      text-xs
+      md:text-sm
+      cursor-pointer
+      select-none
+  `};
+`;
+
+const LineSeperator = styled.span`
+  width: 2px;
+  height: 45%;
+  ${tw`
+      bg-gray-300
+      mr-2
+      ml-2
+      md:mr-5
+      md:ml-5
   `};
 `;
 
