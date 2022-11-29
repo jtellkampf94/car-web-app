@@ -3,7 +3,9 @@ import tw from "twin.macro";
 
 import Navbar from "../../components/navbar";
 import TopSection from "./topSection";
+import Marginer from "../../components/marginer";
 import BookCard from "../../components/bookCard";
+import BookingSteps from "./bookingSteps";
 
 const PageContainer = styled.div`
   ${tw`
@@ -21,7 +23,10 @@ const HomePage: React.FC = () => {
     <PageContainer>
       <Navbar />
       <TopSection />
+      <Marginer direction="vertical" margin="4em" />
       <BookCard />
+      <Marginer direction="vertical" margin="8em" />
+      <BookingSteps />
     </PageContainer>
   );
 };
