@@ -6,6 +6,8 @@ import TopSection from "./topSection";
 import Marginer from "../../components/marginer";
 import BookCard from "../../components/bookCard";
 import BookingSteps from "./bookingSteps";
+import AboutUs from "./aboutUs";
+import TopCars from "./topCars";
 
 const PageContainer = styled.div`
   ${tw`
@@ -25,8 +27,12 @@ const HomePage: React.FC = () => {
       <TopSection />
       <Marginer direction="vertical" margin="4em" />
       <BookCard />
-      <Marginer direction="vertical" margin="8em" />
+      <Marginer direction="vertical" margin="10em" />
       <BookingSteps />
+      <Marginer direction="vertical" margin="8em" />
+      <AboutUs />
+      <Marginer direction="vertical" margin="8em" />
+      <TopCars />
     </PageContainer>
   );
 };
